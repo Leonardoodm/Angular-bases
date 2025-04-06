@@ -1,0 +1,7 @@
+
+  <h1>{{ counter }}</h1>
+  <h1>{{ counterSignal() }}</h1>
+    <button (click)="useActionForCounter({ value: 1, option: CounterOptions.increase })">+1</button>
+    <button (click)="useActionForCounter({ value: 1, option: CounterOptions.decrease })">-1</button>
+    <button (click)="useActionForCounter({ value: 10, option: CounterOptions.reset })">Reset</button>
+
