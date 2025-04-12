@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
-import { CounterPageComponent } from './pages/counter/counter.component';
-import { HeroPageComponent } from './pages/Hero/hero-page.component';
+import { CounterPageComponent, DragonballComponent, HeroPageComponent } from './pages';
+import { DragonballSuperComponent } from './pages/dragonball-super/dragonball-super-page.component';
+
 
 export const routes: Routes = [
   { path: '', component: CounterPageComponent },
@@ -8,4 +9,16 @@ export const routes: Routes = [
     path: 'hero',
     component: HeroPageComponent,
   },
+  {
+    path: 'dragonball',
+    component: DragonballComponent,
+  },
+  {
+    path: 'dragonball-super',
+    component: DragonballSuperComponent,
+  },
+  {
+    path: '**',
+    redirectTo: '',
+  }
 ];

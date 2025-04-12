@@ -1,0 +1,16 @@
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: #212121;
+  color: #fff;
+  padding: 10px;
+}
+
+nav a{
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a.router-link-active{
+  color: rgb(210, 39, 39);
+}

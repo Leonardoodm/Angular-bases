@@ -1,0 +1,16 @@
+<p>{{title()}}</p>,
+<ul>
+  @for(character of Characters(); track character.id; let idx = $index){
+
+  @if (character.power > 500) {
+  <li>
+    <span>{{ idx + 1}} - {{ character.name }} </span>
+    <!-- <span [ngClass]="powerClases()">{{ character.power }}</span> -->
+    <span [class.text-danger]="character.power > 9000 ">{{ character.power }}</span>
+    <span [class.text-primary]="character.power < 9000 ">{{ character.power }}</span>
+  </li>
+  }@else {
+  <strong>Aqui no hay nadie fuerte</strong>
+  }
+  }
+</ul>
